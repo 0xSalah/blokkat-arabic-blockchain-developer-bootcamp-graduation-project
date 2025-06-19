@@ -77,3 +77,28 @@ To run the tests for this project using [Foundry](https://book.getfoundry.sh/), 
   ```bash
   forge test
   ```
+
+
+##  How to Run the Program (Frontend)
+
+If you want to run the frontend locally:
+
+### 1. Install dependencies
+
+```bash
+npm install
+
+npm run dev
+```
+
+
+# env file :
+### on contract file :
+```.env
+PRIVATE_KEY= YOUR PRIVATE KEY
+RPC_URL= inter RPC url
+```
+```.env
+### on frontend file:
+NEXT_PUBLIC_PROJECT_ID= your project id
+```
