@@ -35,3 +35,22 @@ contract isoProject is Ownable {
         mytoken = IMyToken(tokenAdd);
     }
 ```
+
+
+# Security best practices 
+
+### 1- Using Specific Compiler Pragma
+```solidity
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity 0.8.30;
+```
+
+### 2- Proper Use of Require
+-src/ICO_Project.sol-
+```solidity
+function fund() external payable {
+        require(msg.value > 0, "sent ETH to fund and get a token");
+        uint256 amount = msg.value * 1000;
+        mytoken.mint(msg.sender, amount);
+    }
+```
