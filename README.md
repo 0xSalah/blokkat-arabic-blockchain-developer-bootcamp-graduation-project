@@ -12,4 +12,15 @@ A crowdfunding ICO project that enables users to purchase tokens to support the 
 
 
 # design patterns
-Inheritance and Interfaces
+
+### 1- Inheritance and Interfaces
+-src/ICO_Project.sol-
+```solidity
+import "./MyToken.sol";
+import {Ownable} from "../lib/openzeppelin-contracts/contracts/access/Ownable.sol";
+
+interface IMyToken {
+    function mint(address to, uint256 amount) external;
+    function transferOwnership(address _newOwner) external;
+}
+```
