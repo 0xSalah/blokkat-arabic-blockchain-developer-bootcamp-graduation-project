@@ -73,7 +73,7 @@ To run the tests for this project using [Foundry](https://book.getfoundry.sh/), 
   curl -L https://foundry.paradigm.xyz | bash
   foundryup
   ```
-  ## Running the Tests
+  ### Running the Tests
   ```bash
-forge test
-```
+  forge test
+  ```
