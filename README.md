@@ -54,3 +54,26 @@ function fund() external payable {
         mytoken.mint(msg.sender, amount);
     }
 ```
+
+# important links & addresses
+address ICO_Project.sol : 0x31A5268A60A2390262aAE6a1229cd1B62a3f8E58
+address MyToken.sol :
+0xB208731308F55342C1d4e1084020EEe7B35BCEfa
+
+
+
+# How to Run Tests
+
+To run the tests for this project using [Foundry](https://book.getfoundry.sh/), follow these steps:
+
+###  Requirements
+
+- Make sure you have Foundry installed. If not, run:
+  ```bash
+  curl -L https://foundry.paradigm.xyz | bash
+  foundryup
+  ```
+  ## Running the Tests
+  ```bash
+forge test
+```
