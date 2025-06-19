@@ -79,17 +79,22 @@ To run the tests for this project using [Foundry](https://book.getfoundry.sh/), 
   ```
 
 
-##  How to Run the Program (Frontend)
+# How to Run the Program
 
-If you want to run the frontend locally:
+This project includes deployment scripts using Foundry. You can run them on a local testnet like Anvil.
 
-### 1. Install dependencies
+###  Run a Local Node (Anvil)
+
+Start a local testnet:
 
 ```bash
-npm install
-
-npm run dev
+anvil
 ```
+In a separate terminal, deploy the contracts using
+```bash
+ forge script script/deploy.s.sol --rpc-url http://localhost:8545 --private-key <YOUR_PRIVATE_KEY> --broadcast
+```
+
 
 
 # env file :
