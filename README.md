@@ -24,3 +24,14 @@ interface IMyToken {
     function transferOwnership(address _newOwner) external;
 }
 ```
+
+### 2- Access Control Design Patterns 
+-src/ICO_Project.sol-
+```solidity
+contract isoProject is Ownable {
+    IMyToken public mytoken;
+
+    constructor(address tokenAdd) Ownable(msg.sender) {
+        mytoken = IMyToken(tokenAdd);
+    }
+```
